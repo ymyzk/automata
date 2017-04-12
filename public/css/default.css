@@ -278,6 +278,7 @@ td.unsolved {
 .testcase table td pre {
    margin: 0;
    padding: 0;
+   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 table.file_browser {
