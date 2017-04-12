@@ -116,12 +116,12 @@ module Account
         end
       end
 
-      token = SecureRandom.urlsafe_base64(32)
+      token = SecureRandom.urlsafe_base64(6)
       env['rack.session']['token'] = token
       env['rack.session']['email'] = email
 
       body = "ページに戻って，次のトークンを入力してください．\n\n#{token}"
-      Mailer.send_mail(email, 'noreply', body)
+      Mailer.send_mail(email, 'トークン発行', body)
 
       Haml::Engine.new(page).render do
         Haml::Engine.new(form_token).render
