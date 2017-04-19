@@ -125,7 +125,7 @@ var SubmitForm = React.createClass({
                         {this.reactOfStaticReq()}
                         {this.reactOfDynamicReq()}
                     </ul>
-                    <label htmlFor='file'>zipファイル: </label>
+                    <label htmlFor='file'>jarファイル: </label>
                     <input type='file' id='file' name='report_file'
                            onChange={this.onChangeFile}/>
                     <input type='submit' id='submit' value='提出'
